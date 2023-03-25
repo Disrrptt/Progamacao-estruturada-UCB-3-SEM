@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    
+        char nome[100];
+        float salario_fixo, total_vendas, comissao, salario_total;
+    
+  
+            printf("Digite o nome do vendedor: ");
+            fgets(nome, 100, stdin);
+            printf("Digite o salário fixo do vendedor: ");
+            scanf("%f", &salario_fixo);
+            printf("Digite o total de vendas do vendedor: ");
+            scanf("%f", &total_vendas);
+    
+    
+                 comissao = 0.15 * total_vendas;
+                 salario_total = salario_fixo + comissao;
+    
+    
+                    printf("%s receberá um salário total de R$ %.2f no final do mês.\n", nome, salario_total);
+    
+                        return 0;
+}
